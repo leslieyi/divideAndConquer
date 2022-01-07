@@ -12,6 +12,10 @@ function sortedFrequency(arr, num){
     
     return -1
 }
+
+// start with 2 pointers, one from the begining of the array and the other from the end. I loop for as log the right side is bigger than  the left side. Inside the loop i move each pointer towards the desired number.
+
+// Two possible outcomes can happen either the pointers would reach the first occurance and last occurance of `num` and the third if will return the difference of the right and left side or the two pointers will meet the while loop will stop and it will return -1.
 console.log(sortedFrequency([1,1,2,2,2,2,3,],2))//4
 console.log(sortedFrequency([1,1,2,2,2,2,3,],3))//1
 console.log(sortedFrequency([1,1,2,2,2,2,3,],1))//2
